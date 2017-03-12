@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3F1D8A421E75184000E4BFA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D8A411E75184000E4BFA1 /* AppDelegate.swift */; };
-		3F1D8A441E75184000E4BFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D8A431E75184000E4BFA1 /* ViewController.swift */; };
 		3F1D8A471E75184000E4BFA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1D8A451E75184000E4BFA1 /* Main.storyboard */; };
 		3F1D8A491E75184000E4BFA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1D8A481E75184000E4BFA1 /* Assets.xcassets */; };
 		3F1D8A4C1E75184000E4BFA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1D8A4A1E75184000E4BFA1 /* LaunchScreen.storyboard */; };
 		3F1D8A571E75184000E4BFA1 /* FontsDCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D8A561E75184000E4BFA1 /* FontsDCTests.swift */; };
 		3F1D8A621E75184000E4BFA1 /* FontsDCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D8A611E75184000E4BFA1 /* FontsDCUITests.swift */; };
+		3F1D8A701E751A7500E4BFA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D8A6F1E751A7500E4BFA1 /* ViewController.swift */; };
+		3F1D8A721E751D2E00E4BFA1 /* FavoritesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D8A711E751D2E00E4BFA1 /* FavoritesList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		3F1D8A3E1E75184000E4BFA1 /* FontsDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontsDC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1D8A411E75184000E4BFA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F1D8A431E75184000E4BFA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F1D8A461E75184000E4BFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F1D8A481E75184000E4BFA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F1D8A4B1E75184000E4BFA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		3F1D8A5D1E75184000E4BFA1 /* FontsDCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontsDCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F1D8A611E75184000E4BFA1 /* FontsDCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsDCUITests.swift; sourceTree = "<group>"; };
 		3F1D8A631E75184000E4BFA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1D8A6F1E751A7500E4BFA1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F1D8A711E751D2E00E4BFA1 /* FavoritesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,13 @@
 		3F1D8A401E75184000E4BFA1 /* FontsDC */ = {
 			isa = PBXGroup;
 			children = (
-				3F1D8A411E75184000E4BFA1 /* AppDelegate.swift */,
-				3F1D8A431E75184000E4BFA1 /* ViewController.swift */,
 				3F1D8A451E75184000E4BFA1 /* Main.storyboard */,
+				3F1D8A6F1E751A7500E4BFA1 /* ViewController.swift */,
 				3F1D8A481E75184000E4BFA1 /* Assets.xcassets */,
 				3F1D8A4A1E75184000E4BFA1 /* LaunchScreen.storyboard */,
+				3F1D8A411E75184000E4BFA1 /* AppDelegate.swift */,
 				3F1D8A4D1E75184000E4BFA1 /* Info.plist */,
+				3F1D8A711E751D2E00E4BFA1 /* FavoritesList.swift */,
 			);
 			path = FontsDC;
 			sourceTree = "<group>";
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F1D8A441E75184000E4BFA1 /* ViewController.swift in Sources */,
+				3F1D8A701E751A7500E4BFA1 /* ViewController.swift in Sources */,
 				3F1D8A421E75184000E4BFA1 /* AppDelegate.swift in Sources */,
+				3F1D8A721E751D2E00E4BFA1 /* FavoritesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
